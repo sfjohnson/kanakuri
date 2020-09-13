@@ -7,9 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sfjohnson/kanakuri.git"
+    "url": "git+https://github.com/sfjohnson/kanakuri.git"
   },
-  "author": "Iroha",
-  "license": "MPL 2.0",
-  "dependencies": {}
+  "author": "iroha.is",
+  "license": "MPL-2.0",
+  "dependencies": {},
+  "description": "Adaptive and perseverant file transfer over HTTPS.",
+  "bugs": {
+    "url": "https://github.com/sfjohnson/kanakuri/issues"
+  },
+  "homepage": "https://github.com/sfjohnson/kanakuri#readme"
 }
