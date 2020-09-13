@@ -1,23 +1,3 @@
-# Kanakuri
-
-Adaptive and perseverant file transfer over HTTPS. Designed to transfer firmware/content to IoT devices on restrictive or unreliable networks.
-
-Requirements:
-- HTTPS server accepting range GET requests.
-
-Tolerates:
-- Loss of network / changing networks (roaming)
-- Server downtime.
-
-Additional features:
-- Hash verification (SHA256)
-- Resuming of a partially transferred file
-- Transfer progress.
-- No dependencies.
-
-## Example
-
-```js
 const fs = require('fs')
 const https = require('https')
 const FileTransfer = require('kanakuri')
@@ -57,4 +37,3 @@ const entrypoint = async () => {
 }
 
 entrypoint()
-```

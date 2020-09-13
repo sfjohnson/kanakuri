@@ -1,0 +1,15 @@
+{
+  "name": "kanakuri",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfjohnson/kanakuri.git"
+  },
+  "author": "Iroha",
+  "license": "MPL 2.0",
+  "dependencies": {}
+}
