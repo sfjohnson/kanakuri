@@ -40,6 +40,12 @@ module.exports = class FileTransfer {
         headers: { range: `bytes=${start}-${end}` }
       }, (r) => {
         res = r
+        if (res.statusCode !== 206) {
+          res.resume() // Avoids memory leak
+          res.destroy(new Error(res.statusMessage))
+          return
+        }
+
         res.on('data', (subChunk) => {
           if (chunkPos + subChunk.length > chunk.length) {
             res.destroy(new Error('Sub-chunk overflow'))
